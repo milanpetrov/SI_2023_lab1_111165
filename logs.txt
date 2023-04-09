@@ -1,0 +1,29 @@
+commit 7b5d7b020a96dab5da1be5feab8df7426d0c3a21
+Author: milanpetrov <milanpetrov@yahoo.com>
+Date:   Sun Apr 9 16:15:07 2023 +0000
+
+    Fix method sumEvenNumbers
+
+commit 5d89497a123dbdd0ba9b837f3d76ec5e897cd685
+Author: milanpetrov <milanpetrov@yahoo.com>
+Date:   Sun Apr 9 17:22:19 2023 +0000
+
+    merged bug2 changes
+
+commit 26375df6ab87217f55c3bfecc92ad68e459ade91
+Author: milanpetrov <milanpetrov@yahoo.com>
+Date:   Sun Apr 9 16:03:19 2023 +0000
+
+    Fix wrong loop for reading
+
+commit 763a9db56c36735af6a585f8a98b20a4a68d3710
+Author: milanpetrov <milanpetrov@yahoo.com>
+Date:   Sun Apr 9 15:12:52 2023 +0000
+
+    Add java class
+
+commit 0968a1d10514a19b493e356f0a850698a41a70d9
+Author: milanpetrov <milanpetrov@yahoo.com>
+Date:   Sun Apr 9 15:12:16 2023 +0000
+
+    Initial commit

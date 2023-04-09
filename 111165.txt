@@ -1,0 +1,88 @@
+1.straitforward instalirame git i kreirame profil na github so ime milanpetrov
+2.https://github.com/settings/repositories otvarame linkov main rename u master
+3.na github.com ideme vo repositories stiskame new i kreirame SI_2023_lab1_111165 i izbirame opcija private
+4.kako na audotriskata vezba pravime direktorium so komandata mkdir SI_2023_lab1_111165 i vlagame vo nego so cd SI_2023_lab1_111165
+i izvrsuvame komanda git init
+5.izvrsuvame git remote add origin https://github.com/milanpetrov/SI_2023_lab1_111165.git
+6.so komandata git add birame koj fajlovi ke gi komitneme. Vo slucajot sakame samo README.md i zatoa ja izvrsuvame naredbata 
+git add README.md i potoa izvrsuvame git commit -m "Initial commit" dobivame poraka "1 file changed. 1 insertion(+) znaci uspesno sme comitnale
+7. istite postapki ko 6 odnosno izvrsuvame komandite git add SILab1.java     git commit -m "Add java class"
+8. za sinhronizacija pravime push i koristime tokens za autentifikacija
+ja izvrsuvame komandata git push https://tokenotgeneriran@github.com/milanpetrov/SI_2023_lab1_111165.git
+
+9.komandi koi gi izvrsuvame se
+!git branch bug1
+!git branch bug2
+!git branch bug3
+
+10.git checkout bug1
+11. vo loopot citame n+1 broj a treba samo n zatoa menuvame mesto <=n vo <n
+
+gi izvrsuvame slednite komandi
+git add SILab1.java
+git commit -m "Fix wrong loop for reading"
+
+12. se prefrlame na granka bug2 so komandata git checkout bug2
+13. menjame mest == vo ifot != za da ni gi vrati neparnite broevi
+
+git add SILab1.java
+git commit -m "Fix wrong condition in filterOddNumbers"
+
+14. git checkout bug2
+15. greskata e so ne prai suma tuku proizvod zatoa menuvame suma=0 i mesto *= +=
+git add SILab1.java
+git commit -m "Fix method sumEvenNumbers"
+16. izvrsuvame slednite komandi za push na site granki posebno
+git checkout bug1
+git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git bug1
+
+git checkout bug2
+git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git bug2
+
+git checkout bug3
+git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git bug3
+
+nema konflikti
+
+17. git checkout master
+18. izvrsuvame komandata git merge bug1
+nemame konflikti bidejki vo master grankata java fajlot ne e izmenet niednas i koga ke se napravi push na bug1 ne moze da imame 
+kontradiktorna promena
+1 file changed, 1 insertion(+), 1 deletion(-)
+19. pravime push na master grankata so komandata 
+git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git master
+20. izvrsuvame git merge bug2
+dobivame prompt za da vneseme commit poraka po greska ja iskluciv porakata i zatoa morav da gi izvrsam slednite komandi 
+git add SILab1.java
+git commit -m "merged bug2 changes"
+
+21.git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git master 
+22.git checkout bug3
+23.git rebase master
+so komandava gi zema site promeni od master i gi dodava vo bug3 
+24. git checkout master
+25.git merge bug3
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+2 insertions poso 2 izmeni imase vo bug 3
+
+i ovoj pat nemame konflikti zatoa sto so komandata rebase grankata bug 3 se updejtira so promenite od master pred da se napravi merge
+
+26. sledno pravime push na bug3 i master za sinhronizacija so komandite
+git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git master 
+
+git checkout bug3
+git push --force https://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@github.com/milanpetrov/SI_2023_lab1_111165.git bug3
+27. git checkout master
+go kreirame logs.txt fajlot so komandata
+git log>logs.txt
+
+go zacuvuvame 111165.txt i so komandite
+git add logs.txt
+git add 111165.txt
+git commit -m "Final commit"
+
+28.git push https://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@github.com/milanpetrov/SI_2023_lab1_111165.git master 
+
+kako sto gi razbrav 27 i 28 prasanje samo na master treba posledniot comit da se napravi :)
+
+
